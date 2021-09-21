@@ -1,0 +1,112 @@
+#Linux Code
+  @Debian->>
+  1.  Kode printah dasar linux
+    #Setting repository dan update
+    - sudo apt update
+    - sudo apt upgrade
+    #install aplikasi yang dibutuhkan->>Online
+    - sudo apt install terminator
+    - sudo apt install chromium-browser
+    - sudo apt install gimp
+    - sudo apt install lnkscape
+    - sudo apt install audacious
+    - sudo apt install gnome-mpv
+    - sudo apt install gnome-tweak-tool
+    - sudo apt install simplescreenrecorder
+    # cara biasa
+    - sudo apt install composer
+    - sudo apt install nodejs
+    - sudo apt install git
+    - php composer .phar self-update
+    # dengan ppa di linux packet
+    - sudo add-apt-repository
+      ppa:linuxuprising/shutter
+    - sudo apt install shutter
+   @Parrot OS
+    - apt-get update
+    - apt-get upgrade
+    - apt-get --force
+    - apt-get dist upgrade-y
+    - apt-get clean
+    - apt-get autoremove
+    - apt-get autoclean
+    -->>shutdown
+/****************************************************\
+  2. Install Paket Offline
+    - sudo apt install nama-aplikasi .deb->> (lokasi penyimpanan/nama_aplikasi) 
+    - sudo dpkg -i nama-aplikasi .deb->> (nama aplikasi packet) (sebelum diinstall aplikasi silahkan masuk dulu di folder lokasi aplikasi disimpan)
+    - sudo ./
+    Install aplikasi offline 
+  - sudo dpkg -i "nama_aplikasi"
+  #install xampp/lampp
+    @ Folder
+      ~ file system-> opt/lampp/htdocs/nama folder
+    @~ run xampp
+      - start-> sudo opt/lampp/lampp start
+      - stop-> sudo opt/lampp/lampp stop
+      - pindah ke directory-> cd/opt/lampp/htdocs
+      - buat folder->mkdir nama_project
+      - perintah hak akses-> sudo chmod 777 /opt/lampp/htdocs/ -R
+/****************************************************\
+  3. Remove aplikasi Linux ~>> AllDistro
+    #remove aplikasi 
+    - sudo apt remove nama_aplikasi (cara biasa)
+    #remove aplikasi beserta cache paketnya
+    - sudo apt list-installed (cek daftar list paket)
+    - sudo apt purge nama_packet (remove cache bersih)
+    - snap list (melihat semua snap yang diinstall)
+    - sudo snap remove nama packet
+/****************************************************\
+  4. Code umum
+    - sudo add=apt-repository
+    ppa:linuxuprising/shutter
+    - sudo apt install shutter
+/****************************************************\
+  5. Gnome ->> Modifikasi dock
+    - sudo apt install gnome-shell-extensions
+    - sudo apt install dconf--editor
+    - dconf-editor
+/****************************************************\
+  5. PPA data -> $Git
+  #Ubuntu ->
+    - add-apt-repository ppa:git-core/ppa # apt update; apt install git
+  # linuxCode -> All Distro (sesuai sistem distro linux)
+    - apt-get install git (Ubuntu -> All-Debian)
+    - yum install git (Fedora)
+    - emerge --ask --verbose dev-vcs/git (gentoo)
+    - zypper install git (OpenSUSE)
+    - pkg install git (FreeBSD)
+    - apk add git (Alpine)
+    - tazpkg get-install git (Slitaz)
+/****************************************************\
+  6. Modifikasi linux ubuntu
+    #sumber : #kodeData : How To Make Ubuntu Look Like macOS Big Sur [2021]
+     @ Links:-
+      - WhiteSur Gtk Theme: https://bit.ly/3mooZeZ
+      - WhiteSur icon theme: https://bit.ly/3otc7pG
+      - McMojave cursors: https://bit.ly/3onuMU5
+      - WhiteSur Wallpaper: https://bit.ly/3kGRB2s
+      - GNOME Shell integration: https://bit.ly/35w2hLf
+      - User Themes Gnome Extension: https://bit.ly/37OnTF8
+      - Compiz windows effect extension: https://bit.ly/2Geoftb
+     @Terminal Commands:-
+      ⭐ Use the following command to open your Files as root:
+        ~ sudo nautilus
+      ⭐ Use the following command to install gnome tweaks:
+        ~ sudo apt install gnome-tweaks
+      ⭐ Use the following command to install Chrome-Gnome shell:
+        ~ sudo apt install chrome-gnome-shell
+      ⭐ Plank Installation in Ubuntu:
+        ~ sudo add-apt-repository ppa:ricotz/docky
+        ~ sudo apt-get update
+        ~ sudo apt-get install plank
+      ⭐ Use the following command to open plank preferences:
+        ~ plank --preferences
+      ⭐ Use the following command to remove default ubuntu dock:
+        ~ sudo apt remove gnome-shell-extension-ubuntu-dock
+      ⭐ Albert Installation Commands For Ubuntu:
+        ~ curl https://build.opensuse.org/projects/h... | sudo apt-key add -
+        ~ echo 'deb http://download.opensuse.org/reposito... /' | sudo tee /etc/apt/sources.list.d/home:manuelschneid3r.list
+        ~ sudo wget -nv https://download.opensuse.org/reposit... -O "/etc/apt/trusted.gpg.d/home:manuelschneid3r.asc"
+        ~ sudo apt update
+        ~ sudo apt install albert
