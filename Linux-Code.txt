@@ -7,6 +7,9 @@
     #install aplikasi yang dibutuhkan->>Online
     - sudo apt install terminator
     - sudo apt install chromium-browser
+    - sudo apt install blender
+    - sudo apt install vlc
+    - sudo apt install google-chrome
     - sudo apt install gimp
     - sudo apt install lnkscape
     - sudo apt install audacious
