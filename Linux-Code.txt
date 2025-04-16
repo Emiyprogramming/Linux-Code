@@ -16,6 +16,8 @@
     - sudo apt install gnome-mpv
     - sudo apt install gnome-tweak-tool
     - sudo apt install simplescreenrecorder
+    - sudo apt get install thunderbird
+    - instal wps (aplikasi office gratis) --> download di web resminya
     # cara biasa
     - sudo apt install composer
     - sudo apt install nodejs
