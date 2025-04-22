@@ -61,6 +61,9 @@
     - sudo apt purge nama_packet (remove cache bersih)
     - snap list (melihat semua snap yang diinstall)
     - sudo snap remove nama packet
+    - sudo apt-get remove firefox (aplikasi biasa)
+    - sudo apt-get remove --auto-remove firefox-esr (browser bawaan system operasi)\
+    - sudo apt-get purge firefox-esr (bersihkan cache/sampah)
 /****************************************************\
   4. Code umum
     - sudo add=apt-repository
